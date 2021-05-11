@@ -71,6 +71,7 @@ body {
 }
 
 .text {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +83,6 @@ body {
     padding: 3rem 1rem 3rem 1rem;
 }
 .text .paragraph {
-    text-align: center;
     font-weight: 300;
     color: var(--DarkBlue);
 }
@@ -106,9 +106,16 @@ body {
     .text {
         grid-column: 1/2;
         grid-row: 1/2;
-        background-position: center;
+        background-position: 30% 30%;
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 3.2rem;
     }
     .text .paragraph {
-        text-overflow: clip;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 50%;
     }
 }
