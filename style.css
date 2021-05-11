@@ -20,7 +20,6 @@ body {
     height: 100%;
     font-size: 1.8rem;
     line-height: 1.5;
-    background-color: lightgray;
     overflow-x: hidden;
 }
 
@@ -51,18 +50,52 @@ body {
     background-position: center;
     background-size: contain;
 }
-
-.text {
-    background-image: url(/images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 20%;
-}
 .image .img {
-    width: 80%;
+    width: 75%;
     max-width: 54rem;
     border-radius: var(--cornerRadius);
     -webkit-box-shadow: 0px 90px 102px -66px rgba(0, 0, 0, 0.54);
     -moz-box-shadow: 0px 90px 102px -66px rgba(0, 0, 0, 0.54);
     box-shadow: 0px 90px 102px -66px rgba(0, 0, 0, 0.54);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 20%;
+    padding: 3rem 1rem 1rem 1rem;
+}
+.text .paragraph {
+    text-align: center;
+    font-weight: 300;
+    color: var(--DarkBlue);
+}
+.text .name {
+    color: var(--DarkBlue);
+}
+.text .career {
+    color: var(--GrayishBlue);
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .image {
+        grid-column: 2/3;
+    }
+    .text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .text .paragraph {
+        text-overflow: clip;
+    }
 }
