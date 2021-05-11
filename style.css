@@ -17,7 +17,7 @@ html {
 }
 body {
     font-family: "Inter", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     overflow-x: hidden;
     background-color: var(--GrayishBlue);
@@ -37,12 +37,12 @@ body {
     background-color: #fff;
     width: 100%;
     max-width: 144rem;
-    max-height: 90rem;
+    min-height: 70rem;
 }
 .curve__svg img {
     position: absolute;
     overflow: hidden;
-    width: 40%;
+    width: 70%;
     bottom: 0;
     left: 0;
 }
@@ -52,7 +52,7 @@ body {
     max-width: 144rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .image {
@@ -78,23 +78,25 @@ body {
 }
 
 .text {
+    z-index: 999;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
 }
 .text .bg-text {
     position: absolute;
-    top: -10%;
-    left: 40%;
+    top: 0;
     width: 20%;
 }
 
 .text .paragraph {
-    font-weight: 300;
-    color: var(--DarkBlue);
     position: relative;
     top: 0;
+    font-weight: 300;
+    color: var(--DarkBlue);
 }
 .personal__data {
     margin-top: 2rem;
@@ -109,14 +111,25 @@ body {
     font-weight: 500;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+    .text {
+        font-size: 22px;
+        padding: 4rem;
+    }
+    .text .bg-text {
+        top: 0;
+        left: 20%;
+    }
+}
+
+@media (min-width: 640px) {
     body {
         margin: 10rem auto;
     }
     .card {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        padding: 4rem;
+        align-content: end;
     }
     .image {
         grid-column: 2/3;
@@ -124,19 +137,12 @@ body {
     .text {
         grid-column: 1/2;
         grid-row: 1/2;
-        background-position: 30% 30%;
-        text-align: left;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
     .text .paragraph {
-        top: 30%;
-        left: 10%;
-        width: 50%;
-        font-size: 3.2rem;
     }
     .paragraph .name,
     .paragraph .career {
-        font-size: 2.4rem;
     }
 }
