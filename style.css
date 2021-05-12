@@ -22,7 +22,14 @@ body {
     overflow-x: hidden;
     background-color: var(--GrayishBlue);
 }
-
+.button {
+    position: absolute;
+    display: flex;
+    width: 20rem;
+    border: 2px solid red;
+    top: 0;
+    left: 0;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
