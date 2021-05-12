@@ -27,7 +27,6 @@ Users should be able to:
 ### Screenshot
 
 ![](../design/desktop-result-1-Hover.png)
-![](../design/mobile-result.png)
 
 ### Links
 
