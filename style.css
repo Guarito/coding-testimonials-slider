@@ -22,16 +22,8 @@ body {
     overflow-x: hidden;
     background-color: var(--GrayishBlue);
 }
-.button {
-    position: absolute;
-    display: flex;
-    width: 20rem;
-    border: 2px solid red;
-    top: 0;
-    left: 0;
-}
 .attribution {
-    font-size: 11px;
+    font-size: 1.1rem;
     text-align: center;
 }
 .attribution a {
@@ -53,6 +45,39 @@ body {
     width: 70%;
     bottom: 0;
     left: 0;
+}
+
+.btn {
+    z-index: 10000;
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--GrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.btn__previous {
+    border-radius: 0 var(--cornerRadius) var(--cornerRadius) 0;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.btn__next {
+    border-radius: var(--cornerRadius) 0 0 var(--cornerRadius);
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.btn:hover {
+    background-color: var(--DarkBlue);
+}
+.btn:hover #arrow {
+    stroke: #fff;
+}
+.btn #arrow {
+    transition: all 0.5s linear;
 }
 .card {
     display: grid;
@@ -130,11 +155,17 @@ body {
         top: 0;
         left: 20%;
     }
+    .attribution {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 640px) {
     body {
         margin: 10rem auto;
+    }
+    .attribution {
+        font-size: 1.5rem;
     }
     .curve__svg img {
         width: 40%;
@@ -179,6 +210,9 @@ body {
     .text .bg-text {
         top: 30%;
         left: 19%;
+    }
+    .attribution {
+        font-size: 1.8rem;
     }
 }
 @media (min-width: 992px) {

@@ -39,16 +39,6 @@
                         src="/images/image-john.jpg"
                         alt="avatar"
                     />
-                    <div class="button">
-                        <span class="btn__previous" onclick="nextSlide(-1)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/></svg>
-                        </span>
-                        <span class="btn__next" onclick="nextSlide(1)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/></svg>
-                        </span>
-                        
-                    </div>
-                    
                 </div>
                 <div class="text">
                     <img
@@ -75,6 +65,12 @@
                     </p>
                 </div>
             </div>
+            <span class="btn btn__previous" onclick="nextSlide(-1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path id="arrow" fill="none" stroke="#202046" stroke-width="3" d="M11 1L3 9l8 8"/></svg>
+            </span>
+            <span class="btn btn__next" onclick="nextSlide(1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path id="arrow" fill="none" stroke="#202046" stroke-width="3" d="M2 1l8 8-8 8"/></svg>
+            </span>
             <div class="curve__svg">
                 <img src="/images/pattern-curve.svg" alt="" />
             </div>
@@ -86,10 +82,8 @@
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
+            >. Coded by <a href="#">Capassoft</a>.
         </div>
-        <button onclick="nextSlide(-1)">Previous</button>
-        <button onclick="nextSlide(1)">Next</button>
         <script src="/main.js"></script>
     </body>
 </html>
