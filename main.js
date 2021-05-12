@@ -11,18 +11,21 @@ function showSlide(n) {
     var paragraphs = document.getElementsByClassName("paragraph");
     var images = document.getElementsByClassName("img");
 
-    if (n > paragraphs.length) {
+    if (n > images.length) {
         slideIndex = 1;
     }
+
     if (n < 1) {
-        slideIndex = paragraphs.length;
+        slideIndex = images.length;
     }
-    for (index = 0; index < paragraphs.length; index++) {
-        const notCurrentSlide = paragraphs[index];
-        const notCurrenImage = paragraphs[index];
-        notCurrentSlide.style.display = "none";
+
+    for (index = 0; index < images.length; index++) {
+        const notCurrenImage = images[index];
         notCurrenImage.style.display = "none";
+        const notCurrentParragraph = paragraphs[index];
+        notCurrentParragraph.style.display = "none";
     }
+
     paragraphs[slideIndex - 1].style.display = "block";
-    images[slideIndex - 1].style.display = "flex";
+    images[slideIndex - 1].style.display = "block";
 }
