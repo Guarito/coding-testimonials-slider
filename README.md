@@ -27,12 +27,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/desktop-result-1-Hover.png)
-![](./design/mobile-result.png)
+
 
 ### Links
 
 -   Solution URL: [Here](https://github.com/Guarito/coding-bootcamp-testimonials-slider-master)
--   Live Site URL: [Here](https://guarito.github.io/coding-bootcamp-testimonials-slider-master/)
+-   Live Site URL: [Here](https://coding-testimonials-slider.vercel.app/)
 
 ## My process
 
@@ -51,5 +51,5 @@ Users should be able to:
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Guarito)
--   Twitter - [@yourusername](https://www.twitter.com/capassomiguel)
+-   Frontend Mentor - [@Guarito](https://www.frontendmentor.io/profile/Guarito)
+-   Twitter - [@CapassoMiguel](https://www.twitter.com/capassomiguel)
